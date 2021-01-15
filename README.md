@@ -1,71 +1,120 @@
-# Getting Started with Create React App
+# Rick and Morty Catalog
+| Phase One | Phase Two| Phase Three |
+| :---: |  :---: | :---: |
+| <img src="https://media.giphy.com/media/3o7TKuAfCHifvPdcxG/giphy.gif" width="250"> | <img src="https://media.giphy.com/media/afqT2ykIlYcVi/giphy.gif" width="250">  | <img src="https://media.giphy.com/media/1zkMdevx4zPh7Oft1a/giphy.gif" width="250"> |
+## Project Links
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [GitHub Repository](https://https://github.com/kelstrother/ReactApp)
+- [add your deployment link]()
+<hr>
+## Project Description
 
-## Available Scripts
+A simple frontend app built with React. Taking data from the [Rick and Morty API](https://rickandmortyapi.com/), I will create a catalog of searchable characters that will display a few attributes about the searched character.
+<hr>
+## API
 
-In the project directory, you can run:
+The [Rick and Morty API](https://rickandmortyapi.com/) provides three main sections of data (Character, Location and Episode). Inside each of those is a plethora of related data available. 
 
-### `npm start`
+###API Snippet
+<details>
+  <summary>Click for Snippet</summary>
+  
+``` js
+{
+  "info": {
+    "count": 671,
+    "pages": 34,
+    "next": "https://rickandmortyapi.com/api/character/?page=2",
+    "prev": null
+  },
+  "results": [
+    {
+      "id": 1,
+      "name": "Rick Sanchez",
+      "status": "Alive",
+      "species": "Human",
+      "type": "",
+      "gender": "Male",
+      "origin": {
+        "name": "Earth",
+        "url": "https://rickandmortyapi.com/api/location/1"
+      },
+      "location": {
+        "name": "Earth",
+        "url": "https://rickandmortyapi.com/api/location/20"
+      },
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "episode": [
+        "https://rickandmortyapi.com/api/episode/1",
+        "https://rickandmortyapi.com/api/episode/2",
+        // ...
+      ],
+      "url": "https://rickandmortyapi.com/api/character/1",
+      "created": "2017-11-04T18:48:46.250Z"
+    },
+    // ...
+  ]
+}
+```
+</details>
+<hr>
+## Wireframes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [add link to your wireframes]()
+- [add link to your react architecture]()
 
-### `npm test`
+<hr>
+### MVP/PostMVP - 5min
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-### `npm run build`
+#### MVP EXAMPLE
+- Find and use external api 
+- Create pages
+- Build components
+- Render data on page 
+- Allow user to interact with the page
+- Basic Styling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### PostMVP EXAMPLE
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Create interactive animations
+<hr>
+## Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
-### `npm run eject`
+| Component | Description | State |
+| --- | :---: | :---: | 
+| Main | This will be a creative cover page| 
+| App | This will render species and species card| 
+| Nav | This will render the Title Page and Database | 
+| Species| This will be where the initial data pull will take place | 
+| SpeciesCard| This will render the searched for data | 
+| Form| This will take in the text that the user types. It will also include a button | 
+<hr>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Adding Main | H | 2hrs| N/A | N/A |
+| Adding Nav | H | 1hr| N/A | N/A |
+| Adding Form | H | 3hrs| N/A | N/A |
+| Working with API | H | 10hrs| N/A | N/A|
+| Styling | H | 6hrs| N/A | N/A|
+| Total | H | 6hrs| 5hrs | 5hrs |
+<hr>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Additional Libraries
+ Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+<hr>
+## Code Snippet
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# React
+```
+function reverse(string) {
+	// here is the code to reverse a string of text
+}
+```
