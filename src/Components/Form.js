@@ -20,7 +20,7 @@ const Form = (props) => {
       props.speciesSearch(speciesData.searchterm)
    }
    return (
-      <div>
+      <div className='form'>
          <form onSubmit={handleSubmit}>
             <input className='searchbar'
             type='text'

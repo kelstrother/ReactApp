@@ -7,15 +7,18 @@
 - [GitHub Repository](https://https://github.com/kelstrother/ReactApp)
 - [add your deployment link]()
 <hr>
-## Project Description
+
+### Project Description
 
 A simple frontend app built with React. Taking data from the [Rick and Morty API](https://rickandmortyapi.com/), I will create a catalog of searchable characters that will display a few attributes about the searched character.
 <hr>
-## API
+
+### API
 
 The [Rick and Morty API](https://rickandmortyapi.com/) provides three main sections of data (Character, Location and Episode). Inside each of those is a plethora of related data available. 
 
-###API Snippet
+### API Snippet
+
 <details>
   <summary>Click for Snippet</summary>
   
@@ -58,6 +61,7 @@ The [Rick and Morty API](https://rickandmortyapi.com/) provides three main secti
 ```
 </details>
 <hr>
+
 ## Wireframes & Architecture
 
 
@@ -66,6 +70,8 @@ The [Rick and Morty API](https://rickandmortyapi.com/) provides three main secti
 - [React App Architecture](https://res.cloudinary.com/kels-cloud/image/upload/v1610742027/Unit%202/Unit_2_Architecture_-1_x9daqx.jpg)
 
 <hr>
+
+
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
@@ -82,6 +88,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 - Create interactive animations
 <hr>
+
 ## Components
 
 Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
@@ -111,6 +118,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
 <hr>
+
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 

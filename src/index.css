@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #333;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,10 +15,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("/src/img/R&M.png");
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
-  color: #e0e0e0;
+  /* background-image: url("/src/img/R&M.png"); */
+  /* background-size: 100%; */
+  /* height: 100vh; */
+  /* background-repeat: no-repeat; */
+  /* color: #e0e0e0; */
 }
 
 code {
@@ -31,6 +42,29 @@ code {
 }
 
 .universe {
+  display: inline;
   text-decoration: none;
   color: #e0e0e0;
+}
+
+.about {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.logo {
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  margin-top: 5em;
 }

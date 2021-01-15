@@ -6,6 +6,7 @@ import CoverPage from './Pages/CoverPage'
 import SpeciesCard from './Components/SpeciesCard'
 import Nav from './Pages/Nav'
 import { Route, Switch } from 'react-router-dom'
+import About from './Pages/About'
 // import logo from './img/RMtitle.png'
 
 function App() {
