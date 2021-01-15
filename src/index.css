@@ -15,3 +15,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn {
+  padding: .8em;
+  /* margin-left: .5em; */
+  opacity: .9;
+  border-radius: 50%;
+}
+
+.searchbar {
+  padding: .8em;
+  /* margin-right: .5em; */
+  opacity: .7;
+  /* border-radius: 15%; */
+}
+
+.universe {
+  text-decoration: none;
+  color: #e0e0e0;
+}

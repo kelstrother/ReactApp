@@ -1,14 +1,25 @@
 import React from 'react'
 import './App.css';
-import Species from './Species'
-import Form from './Form'
+import Species from './Pages/Species'
+import Form from './Components/Form'
+import CoverPage from './Pages/CoverPage'
+import SpeciesCard from './Components/SpeciesCard'
+import Nav from './Pages/Nav'
+import { Route, Switch } from 'react-router-dom'
+// import logo from './img/RMtitle.png'
 
 function App() {
   return (
     <div className="App">
-      <Species />
-      <Form />
-  
+      <Nav />
+      <Route exact path='/'>
+        <CoverPage />
+      </Route>
+      <Route path='/Species'>
+        <Species />
+      </Route>
+      {/* <Form /> */}
+      {/* <SpeciesCard /> */}
     </div>
   );
 }

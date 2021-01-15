@@ -58,12 +58,12 @@ The [Rick and Morty API](https://rickandmortyapi.com/) provides three main secti
 ```
 </details>
 <hr>
-## Wireframes
+## Wireframes & Architecture
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
+- [App Wireframe](https://res.cloudinary.com/kels-cloud/image/upload/v1610742027/Unit%202/Unit_2_Wireframe_uuiqwo.jpg)
+- [About Wireframe](https://res.cloudinary.com/kels-cloud/image/upload/v1610742351/Unit%202/Unit_2_wireframe-about_ofuhm7.jpg)
+- [React App Architecture](https://res.cloudinary.com/kels-cloud/image/upload/v1610742027/Unit%202/Unit_2_Architecture_-1_x9daqx.jpg)
 
 <hr>
 ### MVP/PostMVP - 5min
@@ -90,8 +90,9 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | --- | :---: | :---: | 
 | Main | This will be a creative cover page| 
 | App | This will render species and species card| 
-| Nav | This will render the Title Page and Database | 
-| Species| This will be where the initial data pull will take place | 
+| Nav | This will render the Title Page, Database and About page | 
+| About | Description about the App | 
+| Species (data list)| This will be where the initial data pull will take place | 
 | SpeciesCard| This will render the searched for data | 
 | Form| This will take in the text that the user types. It will also include a button | 
 <hr>
@@ -99,6 +100,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Main | H | 2hrs| N/A | N/A |
+| Adding About | H | .5hrs| N/A | N/A |
 | Adding Nav | H | 1hr| N/A | N/A |
 | Adding Form | H | 3hrs| N/A | N/A |
 | Working with API | H | 10hrs| N/A | N/A|

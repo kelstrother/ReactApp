@@ -1,4 +1,5 @@
 import React from 'react'
+import SpeciesCard from '../Components/SpeciesCard'
 
 function Species(props) {
 
@@ -22,7 +23,8 @@ function Species(props) {
 
        return (
             <div>
-               <h1>Rick and Morty</h1>
+               {/* <SpeciesCard /> */}
+               <h1>Rick and Morty-Verse</h1>
             </div>
       )
    }

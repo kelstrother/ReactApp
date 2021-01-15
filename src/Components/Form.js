@@ -1,5 +1,5 @@
 import React from 'react'
-import Species from './Species'
+import Species from '../Pages/Species'
 
 // ~             FORM WILL BE WHAT YOU SEARCH FOR THE MOVIES WITH
 
@@ -22,15 +22,15 @@ const Form = (props) => {
    return (
       <div>
          <form onSubmit={handleSubmit}>
-            <input 
+            <input className='searchbar'
             type='text'
             name=''
-            value='Search for a Being'
+            value='Search the Universe'
             onChange={handleChange}         
             />
-            <input 
-            type='submit' 
-            value='Get Info'/>
+            <input className='btn'
+            type='Submit' 
+            value='Go'/>
          </form>
       </div>
    
