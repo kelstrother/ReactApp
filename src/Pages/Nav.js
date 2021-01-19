@@ -9,7 +9,7 @@ function Nav() {
    return (
          <div className='nav'>
             <Link to='/Character'>
-            <div className='universe'>Rick and Morty Universe</div>
+            <div className='universe'>The Rick and Morty-verse</div>
             </Link>
             <Link to='/'>
             <div className='logo'>
