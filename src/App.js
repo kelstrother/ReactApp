@@ -1,25 +1,42 @@
-import React from 'react'
-import './App.css';
-import Species from './Pages/Species'
-import Form from './Components/Form'
-import CoverPage from './Pages/CoverPage'
-import SpeciesCard from './Components/SpeciesCard'
-import Nav from './Pages/Nav'
+import { useState, useEffect } from 'react'
 import { Route, Switch } from 'react-router-dom'
+import Character from './Pages/Character'
+import Form from './Components/Form'
+import CharacterCard from './Components/CharacterCard'
+import Nav from './Pages/Nav'
 import About from './Pages/About'
+import './App.css';
+import axios from 'axios'
 // import logo from './img/RMtitle.png'
 
+
 function App() {
+  const [character, setCharacter] = useState([])  
+
+        const getCharacter = async () => {
+          const response = await fetch(`https://rickandmortyapi.com/api/character`)
+          const data= await response.json()
+          setCharacter(data.results)
+            console.log(data)
+      }
+        useEffect(()=> {
+        getCharacter()
+      }, [])
+  
   return (
     <div className="App">
       <Nav />
-      <Route exact path='/'>
-        <CoverPage />
+      {/* <Route path='/'>
+        <Character />
+      </Route> */}
+      <Form />
+      <Route path='/Character'>
+        <Character character={character}/>
       </Route>
-      <Route path='/Species'>
-        <Species />
+      <Route path='/About'>
+        <About />
       </Route>
-      {/* <Form /> */}
+      
       {/* <SpeciesCard /> */}
     </div>
   );

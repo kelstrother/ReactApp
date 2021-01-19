@@ -1,6 +1,6 @@
 import React from 'react'
 import img from '../img/RMtitle.png'
-import Species from './Species'
+import Character from './Character'
 import { Link } from 'react-router-dom'
 
 
@@ -8,7 +8,7 @@ function Nav() {
   
    return (
          <div className='nav'>
-            <Link to='/Species'>
+            <Link to='/Character'>
             <div className='universe'>Rick and Morty Universe</div>
             </Link>
             <Link to='/'>
