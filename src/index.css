@@ -42,22 +42,34 @@ code {
 }
 
 .universe {
-  display: inline;
+  font-size: 2em;
+  position: relative;
   text-decoration: none;
   color: #e0e0e0;
+  top: 4em;
 }
 
 .about {
+  font-size: 2em;
+  position: relative;
   text-decoration: none;
+  color: #e0e0e0;
+  grid-row: 3/4;
+  top: 4em;
+}
+
+.about-page {
   color: #e0e0e0;
 }
 
 .logo {
+  grid-row: 1/2;
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .container {
@@ -65,8 +77,8 @@ code {
   justify-content: space-between;
 }
 
-.form {
-  margin-top: 5em;
+.searchbar {
+  margin-bottom: 5em;
 }
 
 .character-container {
@@ -83,4 +95,8 @@ code {
 
 .character-img {
   
+}
+
+.cc-back {
+  color: #e0e0e0;
 }

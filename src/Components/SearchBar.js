@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-const Form = ({ getEndPoint }) => {
+const SearchBar = ({ getEndPoint, endPoint }) => {
 
    const [text, setText] = useState('')
 
@@ -8,6 +8,7 @@ const Form = ({ getEndPoint }) => {
       setText(endPoint)
       getEndPoint(endPoint)
    }
+  
    return (
       <div className='form'>
          <form 
@@ -18,7 +19,7 @@ const Form = ({ getEndPoint }) => {
             type='text'
             name='charactersearch'
             value={ text }
-            placeholder='Search Character...'
+            placeholder='Search Characters...'
             onChange={(e) => onChange(e.target.value)}         
             />
             {/* <input className='btn'
@@ -29,7 +30,7 @@ const Form = ({ getEndPoint }) => {
    )
 }
 
-export default Form
+export default SearchBar
 
    
 

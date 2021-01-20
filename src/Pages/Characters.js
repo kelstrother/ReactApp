@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import CharacterCard from '../Components/CharacterCard'
 
-function Character({ character }) {
+function Characters({ character }) {
    
    return (
       <div className="cards">
@@ -12,5 +12,5 @@ function Character({ character }) {
    )
 }
 
-export default Character
+export default Characters
    

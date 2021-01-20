@@ -1,11 +1,12 @@
 import React from 'react'
-import Form from '../Components/Form'
+import Form from '../Components/SearchBar'
+import logo from '../img/R&M.png'
 
 
 const Home = () => {
    return (
       <div className='home'>
-         <Form />
+         <img src={ logo } />
       </div>
    )
 }

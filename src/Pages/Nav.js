@@ -1,6 +1,6 @@
 import React from 'react'
 import img from '../img/RMtitle.png'
-import Character from './Character'
+import Characters from './Characters'
 import { Link } from 'react-router-dom'
 
 
@@ -8,16 +8,14 @@ function Nav() {
   
    return (
          <div className='nav'>
-            <Link to='/Character'>
-            <div className='universe'>The Rick and Morty-verse</div>
+            <Link to='/'>
+            <p className='universe'>Characterverse</p>
             </Link>
             <Link to='/'>
-            <div className='logo'>
-               <img src={img} width='250' />
-            </div>
+             <img className='logo' src={img} width='250' />
             </Link>
             <Link to='/About'>
-            <div className='about'>About</div>
+            <p className='about'>About</p>
             </Link>
          </div>
         

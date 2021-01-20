@@ -4,8 +4,8 @@
 | <img src="https://media.giphy.com/media/3o7TKuAfCHifvPdcxG/giphy.gif" width="250"> | <img src="https://media.giphy.com/media/afqT2ykIlYcVi/giphy.gif" width="250">  | <img src="https://media.giphy.com/media/1zkMdevx4zPh7Oft1a/giphy.gif" width="250"> |
 ## Project Links
 
-- [GitHub Repository](https://https://github.com/kelstrother/ReactApp)
-- [add your deployment link]()
+- [GitHub Repository](https://github.com/kelstrother/ReactApp)
+- [Live App Link](https://rickandmorty-characterverse.netlify.app)
 <hr>
 
 ### Project Description
@@ -65,9 +65,9 @@ The [Rick and Morty API](https://rickandmortyapi.com/) provides three main secti
 ## Wireframes & Architecture
 
 
-- [App Wireframe](https://res.cloudinary.com/kels-cloud/image/upload/v1610742027/Unit%202/Unit_2_Wireframe_uuiqwo.jpg)
-- [About Wireframe](https://res.cloudinary.com/kels-cloud/image/upload/v1610742351/Unit%202/Unit_2_wireframe-about_ofuhm7.jpg)
-- [React App Architecture](https://res.cloudinary.com/kels-cloud/image/upload/v1610742027/Unit%202/Unit_2_Architecture_-1_x9daqx.jpg)
+- [App Wireframe](https://res.cloudinary.com/kels-cloud/image/upload/v1611165024/Unit%202/Wireframe.jpg)
+
+- [React App Architecture](https://res.cloudinary.com/kels-cloud/image/upload/v1611164787/Unit%202/Architecture.jpg)
 
 <hr>
 
