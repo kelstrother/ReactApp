@@ -107,12 +107,12 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Main | H | 2hrs| N/A | N/A |
-| Adding About | H | .5hrs| N/A | N/A |
-| Adding Nav | H | 1hr| N/A | N/A |
-| Adding Form | H | 3hrs| N/A | N/A |
+| Adding About | H | 2hrs| N/A | N/A |
+| Adding Nav | H | 3hr| N/A | N/A |
+| Adding Form | H | 5hrs| N/A | N/A |
 | Working with API | H | 10hrs| N/A | N/A|
-| Styling | H | 6hrs| N/A | N/A|
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Styling | H | 10hrs| N/A | N/A|
+| Total | H | 32hrs| hrs | hrs |
 <hr>
 
 ## Additional Libraries
