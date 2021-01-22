@@ -6,13 +6,17 @@ function CharacterCard({ character }) {
       <div className="card">
        <div className="card-inner">
           <div className="cc-front">
-             <img src={character.image} alt=''/>
+             <div className="cc-image">
+                <img src={character.image} alt=''/> 
+                  <div className="name-banner">
+                     <h2 className='front-name'>{character.name}</h2>
+                  </div>
+             </div>
           </div>
           <div className="cc-back">
-             <h1>{character.name}</h1>
              <ul>
-                <li>
-                   <strong>Character:</strong> {character.name}
+                <li className='back-name'>
+                   <strong>{character.name}</strong> 
                 </li>
                 <li>
                    <strong>Species:</strong> {character.species}
@@ -26,6 +30,7 @@ function CharacterCard({ character }) {
              </ul>
           </div>
        </div>
+      
     </div>
    )
 }

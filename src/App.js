@@ -7,7 +7,7 @@ import CharacterCard from './Components/CharacterCard'
 import Nav from './Pages/Nav'
 import About from './Pages/About'
 import './App.css';
-// import logo from './img/RMtitle.png'
+import Header from './Components/Header'
 
 
 function App() {
@@ -22,12 +22,15 @@ function App() {
     }
 
       useEffect(()=> {
-      getCharacter()
+      if (endPoint) {
+        getCharacter()
+      } 
     }, [endPoint])
     // !^^^^^^^ dependency so when endPoint changes, useEffect runs again.
   
   return (
     <div className="App">
+        <Header />
         <Nav />
         <SearchBar getEndPoint={(endPoint) => setEndPoint(endPoint)} />
       <Switch>
