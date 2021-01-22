@@ -5,9 +5,9 @@ import img from '../img/RMtitle.png'
 const Header = () => {
    return (
       <div className='header'>
-         <Link to='/'>
+         {/* <Link to='/'> */}
          <img className='logo' src={img} width='250' />
-         </Link>
+         {/* </Link> */}
       </div>
    )
 }

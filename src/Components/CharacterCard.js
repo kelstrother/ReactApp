@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function CharacterCard({ character }) {
    return (
       <div className="card">
-       <div className="card-inner">
+       <div className="card-inside">
           <div className="cc-front">
              <div className="cc-image">
                 <img src={character.image} alt=''/> 

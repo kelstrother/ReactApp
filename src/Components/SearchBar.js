@@ -8,6 +8,7 @@ const SearchBar = ({ getEndPoint, endPoint, setEndPoint}) => {
       setText(endPoint)
       getEndPoint(endPoint)
    }
+
   
    return (
       <div className='form'>

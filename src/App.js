@@ -2,11 +2,8 @@ import { useState, useEffect } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Characters from './Pages/Characters'
 import SearchBar from './Components/SearchBar'
-// import Home from './Pages/Home'
-import CharacterCard from './Components/CharacterCard'
 import Nav from './Pages/Nav'
 import About from './Pages/About'
-import './App.css';
 import Header from './Components/Header'
 
 
@@ -18,7 +15,6 @@ function App() {
         const response = await fetch(`https://rickandmortyapi.com/api/character/?name=${endPoint}`)
         const data= await response.json()
         setCharacter(data.results)
-          // console.log(data)
 }
 
       useEffect(()=> {
@@ -26,14 +22,14 @@ function App() {
         getCharacter()
       } 
     }, [endPoint])
-    // !^^^^^^^ dependency so when endPoint changes, useEffect runs again.
+ 
   
   return (
     <div className="App">
-        <Header />
-        <Nav />
-        <SearchBar getEndPoint={(endPoint) => setEndPoint(endPoint)} />
-        <Switch>    
+      <Header />
+      <Nav />
+      <SearchBar getEndPoint={(endPoint) => setEndPoint(endPoint)} />
+      <Switch>
       <Route exact path='/'>
         <Characters character={character} />
       </Route>

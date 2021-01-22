@@ -11,9 +11,6 @@
 }
 
 html {
-  /* background: rgb(70, 149, 165);
-  background-image: linear-gradient(to top left, rgb(36, 190, 221) 20%, rgb(44, 56, 70) 100%); */
-  background: #333;
   background: linear-gradient(to top right, rgb(209, 196, 82) 0%, rgba(68,195,196,1) 25%, rgb(3, 37, 70) 100%);
   background-size: 100%;
   min-height: 100%;
@@ -42,7 +39,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
 }
 
 .nav-container a {
@@ -75,7 +71,7 @@ input {
   border: 0;
   border-radius: 5px;
   width: 60vw;
-  margin-bottom: 3em;
+  margin-bottom: 6em;
   max-width: 500px;
 }
 
@@ -93,7 +89,6 @@ input {
   background-color: transparent;
   height: 300px;
   perspective: 1000;
-  /* box-shadow: #e0e0e0 1px 1px 10px; */
 }
 
 .name-banner {
@@ -120,7 +115,7 @@ input {
   z-index: -1;  
 }
 
-.card-inner {
+.card-inside {
   position: relative;
   width: 100%;
   height: 100%;
@@ -128,7 +123,7 @@ input {
   transform-style: preserve-3d;
 }
 
-.card:hover .card-inner {
+.card:hover .card-inside {
   transform: rotateY(180deg);
 }
 
@@ -230,15 +225,3 @@ input {
     height: 300px;
   }
 }
-
-/* background: rgb(95,199,219);
-background: linear-gradient(180deg, rgba(95,199,219,1) 0%, rgba(236,221,50,1) 100%);
-
-background: rgb(95,199,219);
-background: radial-gradient(circle, rgba(95,199,219,1) 0%, rgba(51,48,0,1) 100%);
-
-background: rgb(231,217,89);
-background: radial-gradient(circle, rgba(231,217,89,1) 0%, rgba(68,195,196,1) 35%, rgba(51,48,0,1) 90%);
-
-background: rgb(231,217,89);
-background: linear-gradient(25deg, rgba(231,217,89,1) 0%, rgba(68,195,196,1) 50%, rgba(51,48,0,1) 90%); */
