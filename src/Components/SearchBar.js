@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
-const SearchBar = ({ getEndPoint, endPoint }) => {
 
+const SearchBar = ({ getEndPoint, endPoint, setEndPoint}) => {
    const [text, setText] = useState('')
 
    const onChange = (endPoint) => {
@@ -11,9 +11,7 @@ const SearchBar = ({ getEndPoint, endPoint }) => {
   
    return (
       <div className='form'>
-         <form 
-         // onSubmit={handleSubmit}
-         >
+         <form>
             <input 
             className='searchbar'
             type='text'
@@ -22,29 +20,9 @@ const SearchBar = ({ getEndPoint, endPoint }) => {
             placeholder='Search Characters...'
             onChange={(e) => onChange(e.target.value)}         
             />
-            {/* <input className='btn'
-            type='Submit' 
-            value='Go'/> */}
          </form>
       </div>
    )
 }
 
 export default SearchBar
-
-   
-
-// const Form = (props) {
-
-   // const [characterData, setCharacterData] = React.useState(null)
-   // !CREATE FUNCTION TO UPDATE FORM DATA ONCHANGE (SO THAT YOU CAN TYPE IN THE TEXT FIELD)
-   // const handleChange = (event) => {
-   //    console.log("event:", event)
-   //    setCharacterData( {...characterData, [event.target.name]: event.target.value} )
-   // }
-
-   // !   CREATE A FUNCTION TO SUBMIT THE FORM
-   // const handleSubmit = (event) => {
-   //    event.preventDefault()
-   //    props.characterSearch(characterData.searchterm)
-   // }

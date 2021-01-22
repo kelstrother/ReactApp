@@ -16,16 +16,16 @@ function CharacterCard({ character }) {
           <div className="cc-back">
              <ul>
                 <li className='back-name'>
-                   <strong>{character.name}</strong> 
+                   <strong><span className='cb-name'>{character.name}</span></strong> 
                 </li>
                 <li>
-                   <strong>Species:</strong> {character.species}
+                   <strong><span className="cb-human">Species:</span></strong> {character.species}
                 </li>
                 <li>
-                   <strong>Status:</strong> {character.status}
+                   <strong><span className="cb-status">Status:</span></strong> {character.status}
                 </li>
                 <li>
-                   <strong>Location:</strong> {character.origin.name}
+                   <strong><span className="cb-location">Location:</span></strong> <span  className='back-location'>{character.origin.name}</span>
                 </li> 
              </ul>
           </div>

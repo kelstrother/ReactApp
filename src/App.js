@@ -19,7 +19,7 @@ function App() {
         const data= await response.json()
         setCharacter(data.results)
           // console.log(data)
-    }
+}
 
       useEffect(()=> {
       if (endPoint) {
@@ -33,9 +33,9 @@ function App() {
         <Header />
         <Nav />
         <SearchBar getEndPoint={(endPoint) => setEndPoint(endPoint)} />
-      <Switch>
+        <Switch>    
       <Route exact path='/'>
-        <Characters character={character}/>
+        <Characters character={character} />
       </Route>
       <Route path='/About'>
         <About />
